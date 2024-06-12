@@ -6,6 +6,7 @@ public class S0611VO {  // 생성해서 써야함
 	private int age;
 	private int gender;
 	private String strGender;
+	private String name;
 	
 	public String getMid() {
 		return mid;
@@ -37,10 +38,16 @@ public class S0611VO {  // 생성해서 써야함
 	public void setStrGender(String strGender) {
 		this.strGender = strGender;
 	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 	@Override
 	public String toString() {
 		return "S0611VO [mid=" + mid + ", pwd=" + pwd + ", age=" + age + ", gender=" + gender + ", strGender=" + strGender
-				+ "]";
+				+ ", name=" + name + "]";
 	}
 }

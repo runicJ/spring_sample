@@ -18,7 +18,7 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
 	//@RequestMapping(value = "/", method = RequestMethod.GET)  // localhost:9090/context명/ 끝에 / 까지 ex)http://localhost:9090/sample/
-	@RequestMapping(value = {"/","/home","/index","/main"}, method = RequestMethod.GET)  // 여러개 쓰려면 {}
+	@RequestMapping(value = {"/","/home","/index","/main","/h"}, method = RequestMethod.GET)  // 여러개 쓰려면 {}
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);  // 로그내용 info, warning, error, debug  // 국가 console
 		//logger.debug("Welcome home! The client locale is {}.", locale);
@@ -28,7 +28,7 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);
 		
-		model.addAttribute("serverTime", formattedDate );
+		model.addAttribute("serverTime", formattedDate);
 		
 		return "home";
 	}
