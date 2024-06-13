@@ -126,9 +126,9 @@ public class S0611Controller {  // service와 역할분담 잘 해야 함 // 여
 	}
 	
 	//@RequestMapping(value = "/test7", method = RequestMethod.POST)  // 405 전송방식(POST,GET) 오류
-	/* @PostMapping("/test8")
-	public ModelAndView getTest8(S0611VO vo, 
-			HttpServletRequest request) throws UnsupportedEncodingException {		
+	/*
+	@PostMapping("/test8")
+	public ModelAndView getTest8(S0611VO vo, HttpServletRequest request) throws UnsupportedEncodingException {		
 		request.setCharacterEncoding("utf-8");  // post 방식에선 한글이 깨짐
 		
 		String name = request.getParameter("name");
@@ -139,7 +139,8 @@ public class S0611Controller {  // service와 역할분담 잘 해야 함 // 여
 		mv.addObject("name", name);
 		
 		return mv;
-	} */
+	}
+	*/
 	
 	@PostMapping("/test8")
 	public ModelAndView getTest8(S0612VO vo, String name) {		

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 생성자로 넣음(첫번째는 setter getter => property) -->
+	<bean id="infor" class="com.spring.sample.s0613.WebSiteInfor">
+		<constructor-arg value="com.mysql.jdbc.Driver" />
+		<constructor-arg value="jdbc:mysql://localhost:3306/javaclass" />
+		<constructor-arg value="root" />
+		<constructor-arg value="1234" />
+	</bean>
+
+</beans>

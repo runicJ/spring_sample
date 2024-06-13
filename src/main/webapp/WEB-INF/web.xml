@@ -32,7 +32,7 @@
 	</servlet-mapping>
 	
 	<!-- 한글처리(필터적용) AOP(ex-필터, 트렌젝션 => aop 기능 가지고 있음, 사용자 정의 AOP => annotation 사용해야 함) -->
-		<!-- controller 가서 해당 기능 경로 가져오기 -->
+	<!-- controller 가서 해당 기능 경로 가져오기 -->
 	<filter>
 		<filter-name>encoding</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

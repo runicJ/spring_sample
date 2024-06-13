@@ -6,6 +6,11 @@
 <head>
 	<title>Home</title>
   <jsp:include page="/WEB-INF/views/include/bs4.jsp" />
+  <script>
+  	'use strict';
+  	
+  	if('${msg}' != null && '${msg}' != '') alert("${msg}");
+  </script>
 </head>
 <body>
 <p><br><p>
@@ -17,7 +22,9 @@
 	<P>  The time on the server is ${serverTime}. </P>
 	<hr>
 	<p>
-		<a href="${ctp}/0611/index" class="btn btn-success">index.jsp</a>
+	  <a href="${ctp}/0611/index" class="btn btn-success">index.jsp</a> |
+	  <a href="${ctp}/logTest" class="btn btn-info">로그연습</a> |
+	  <a href="${ctp}/aop/aopMenu" class="btn btn-primary">AOP연습</a> |
 	</p>
 </div>
 </body>

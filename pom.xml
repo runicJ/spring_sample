@@ -11,6 +11,7 @@
 	<properties>
 		<java-version>11</java-version>
 		<org.springframework-version>4.3.14.RELEASE</org.springframework-version>
+		<!-- aop 사용시 아래 버전을 적어줌 -->
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<!-- log4j X -->
 		<org.slf4j-version>1.6.6</org.slf4j-version>
@@ -42,7 +43,7 @@
 			<version>${org.aspectj-version}</version>
 		</dependency>	
 		
-		<!-- Logging -->
+		<!-- Logging --><!-- 의존성 주입 해야함 log에 대한 것 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -127,6 +128,22 @@
 		    <version>1.18.24</version>
 		    <scope>provided</scope>
 		    <!-- 생명주기 - 생성과 동시에 사용 -->
+		</dependency>
+
+		<!-- Aop를 사용하기 위한 라이브러리(2개) : Spring AOP / aspectjweaver  => IoC 컨테이너로 넣음 -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aop</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		    <!-- maven EL로 집어넣기 -->
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${org.aspectj-version}</version>
+		    <scope>runtime</scope>
 		</dependency>
 
 	</dependencies>
