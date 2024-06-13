@@ -3,44 +3,60 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
 	<bean id="standardKR" class="com.spring.sample.s0613.BMIVO">
 		<property name="nation" value="대한민국" />
-		<property name="underWeight" value="0.0" />
-		<property name="normalWeight" value="18.5" />
-		<property name="beforeObesity" value="23.0" />
-		<property name="step1Obesity" value="25.0" />
-		<property name="step2Obesity" value="30.0" />
-		<property name="step3Obesity" value="35.0" />
-	</bean>
-	<bean id="standardWorld" class="com.spring.sample.s0613.BMIVO">
-		<property name="nation" value="세계보건기구" />
-		<property name="underWeight" value="0.0" />
-		<property name="normalWeight" value="18.5" />
+		<property name="underWeight" value="18.5" />
+		<property name="normalWeight" value="23.0" />
 		<property name="beforeObesity" value="25.0" />
 		<property name="step1Obesity" value="30.0" />
 		<property name="step2Obesity" value="35.0" />
-		<property name="step3Obesity" value="40.0" />
+	</bean>
+	<bean id="standardWorld" class="com.spring.sample.s0613.BMIVO">
+		<property name="nation" value="세계보건기구" />
+		<property name="underWeight" value="18.5" />
+		<property name="normalWeight" value="25.0" />
+		<property name="beforeObesity" value="30.0" />
+		<property name="step1Obesity" value="35.0" />
+		<property name="step2Obesity" value="40.0" />
+	</bean>
+	<bean id="perUSMale" class="com.spring.sample.s0613.BMIVO">
+		<property name="nation" value="US" />
+		<property name="underWeight" value="22.2" />
+		<property name="normalWeight" value="27.7" />
+		<property name="beforeObesity" value="31.6" />
+		<property name="step1Obesity" value="36.1" />
+		<property name="step2Obesity" value="39.8" />
+	</bean>
+	<bean id="perUSFemale" class="com.spring.sample.s0613.BMIVO">
+		<property name="nation" value="US" />
+		<property name="underWeight" value="21.0" />
+		<property name="normalWeight" value="27.7" />
+		<property name="beforeObesity" value="33.2" />
+		<property name="step1Obesity" value="39.3" />
+		<property name="step2Obesity" value="43.3" />
 	</bean>
 	<bean id="vo1" class="com.spring.sample.s0613.BMIVO">
 		<property name="name" value="홍길동" />
 		<property name="height" value="170" />
-		<property name="weight" value="65" />
+		<property name="weight" value="63" />
+		<property name="gender" value="남성" />
 	</bean>
 	<bean id="vo2" class="com.spring.sample.s0613.BMIVO">
 		<property name="name" value="김말숙" />
 		<property name="height" value="164" />
 		<property name="weight" value="65" />
+		<property name="gender" value="여성" />
 	</bean>
 	<bean id="vo3" class="com.spring.sample.s0613.BMIVO">
 		<property name="name" value="이기자" />
 		<property name="height" value="181" />
 		<property name="weight" value="97" />
+		<property name="gender" value="남성" />
 	</bean>
 	<bean id="vo4" class="com.spring.sample.s0613.BMIVO">
 		<property name="name" value="소나무" />
 		<property name="height" value="172" />
 		<property name="weight" value="52" />
+		<property name="gender" value="여성" />
 	</bean>
-	
 </beans>

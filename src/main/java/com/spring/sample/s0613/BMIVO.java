@@ -1,5 +1,7 @@
 package com.spring.sample.s0613;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,6 +13,7 @@ public class BMIVO {
 	private String name;
 	private int height;
 	private int weight;
+	private String gender;
 	
 	private String nation;
 	private double underWeight;
@@ -18,20 +21,22 @@ public class BMIVO {
 	private double beforeObesity;
 	private double step1Obesity;
 	private double step2Obesity;
-	private double step3Obesity;
 	
 	private double bmi;
 	private String step;
 	
-	private BMIService service = new BMIService();
+//	@Autowired
+//	BMIService service;
+	
+	BMIService service = new BMIService(); 
 	
 	public void bmiCalc() {
-		BMIVO vo = service.calc(underWeight, normalWeight, beforeObesity, step1Obesity, step2Obesity, step3Obesity, height, weight);
+		BMIVO vo = service.calc(underWeight, normalWeight, beforeObesity, step1Obesity, step2Obesity, height, weight);
 		this.bmi = vo.getBmi();
 		this.step = vo.getStep();
 	}
 	
 	public void printBMI() {
-		service.printBMI(name, bmi, step);
+		service.printBMI(nation, name, bmi, step);
 	}
 }

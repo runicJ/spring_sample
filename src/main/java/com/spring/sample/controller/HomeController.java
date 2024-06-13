@@ -57,7 +57,7 @@ public class HomeController {
 		  logger.info("info : {}", today); logger.warn("warn : {}", today);
 		  logger.error("error : {}", today);
 		  
-		  System.out.println(); 
+		  System.out.println();
 		  log.info("롬복라이브러리(@Slf4j)객체를 이용한 출력");
 		  log.trace("trace : {}", today); log.debug("debug : {}", today);
 		  log.info("info : {}", today); log.warn("warn : {}", today);
