@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- text 형식의 데이터만 xml 사용 // 아래처럼 그냥 데이터를 넣음 -->
+	<bean id="infor" class="com.spring.sample.s0613.WebSiteInfor">
+		<property name="driver" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/javaclass" />
+		<property name="user" value="root" />
+		<property name="password" value="1234" />
+	</bean>
+
+</beans>
